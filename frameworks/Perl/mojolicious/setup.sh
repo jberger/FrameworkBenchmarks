@@ -1,7 +1,7 @@
 #!/bin/bash
 
-carton exec hypnotoad ${TROOT}/app.pl
+${PERL_HOME}/bin/carton exec ${PERL_HOME}/bin/hypnotoad ${TROOT}/app.pl
 
 ## stop:
-# carton exec hypnotoad -s ${TROOT}/app.pl
+# ${PERL_HOME}/bin/carton exec ${PERL_HOME}/bin/hypnotoad -s ${TROOT}/app.pl
 

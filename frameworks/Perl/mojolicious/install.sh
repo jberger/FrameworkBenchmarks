@@ -2,5 +2,5 @@
 
 fw_depends perl
 
-carton install --cpanfile ${TROOT}/cpanfile
+${PERL_HOME}/bin/carton install --cpanfile ${TROOT}/cpanfile
 
