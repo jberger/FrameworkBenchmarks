@@ -2,9 +2,8 @@
 
 fw_depends perl
 
+sudo mkdir --mode=0777 local
 carton install --cpanfile ${TROOT}/cpanfile
 
 export LIBEV_FLAGS=7
-HYPNOTOAD=$(${PERL_HOME}/bin/carton exec which hypnotoad)
-
-carton exec perl ${HYPNOTOAD} ${TROOT}/app.pl
+carton exec hypnotoad ${TROOT}/app.pl
